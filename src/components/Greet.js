@@ -1,5 +1,5 @@
 import React from 'react'
-
+// stateless component, functional component
 // function Greet(){
 //     return <h1>Hello Xitol</h1>
 // }
