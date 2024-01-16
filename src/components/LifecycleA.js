@@ -17,12 +17,34 @@ class LifecycleA extends Component {
     }
 
     componentDidMount(){
-        console.log('LifeCycleA ComponentDidMount')
+        console.log('LifecycleA ComponentDidMount')
     }
+
+    shouldComponentUpdate(){
+        console.log('LifecycleA shouldComponentUpdate')
+        return true
+    }
+
+    getSnapshotBeforeUpdate(){
+        console.log('LifecycleA getSnapshotBeforeUpdate')
+        return null
+    }
+
+    componentDidUpdate(){
+        console.log('LifecycleA componentDidUpdate')
+    }
+
+    changeState = () =>{
+        this.setState({
+            name: 'TechDev np'
+        })
+    }
+
   render() { 
         console.log('LifecycleA render')
         return(<div>
             <div>Lifecycle A</div>
+            <button onClick={this.changeState}>Change State</button>
             <LifecycleB />
         </div>) 
   }
