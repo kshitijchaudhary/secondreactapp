@@ -18,17 +18,21 @@ import './appStyles.css'
 import styles from './appStyles.module.css'
 import Form from './components/Form.js'
 import LifecycleA from './components/LifecycleA.js';
+import FragmentDemo from './components/FragmentDemo.js';
+import Table from './components/Table.js';
+
 
 class App extends Component {
 
   render(){
   return (
     <div className="App">
-      <LifecycleA />
+      <Table />
+      
 
 
-
-
+    {/* <FragmentDemo /> */}
+    {/* <LifecycleA /> */}
      {/* <Form /> */}
       {/* <h1 className='error'>Error</h1>
       <h1 className={styles.success}>Success</h1>
